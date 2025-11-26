@@ -14,7 +14,7 @@ fetch('/data.json')
 
         // for displaying expenses
         expenses.forEach((element, index) => {
-            element.textContent = data[index].amount;
+            element.textContent = "$" + data[index].amount;
         });
     })
     .catch(error => console.error('Error', error));
