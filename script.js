@@ -30,4 +30,4 @@ container.forEach((cont, index) => {
         expenses[index].style.opacity = 0;
         bars[index].style.opacity = 1;
     });
-});s
+});
