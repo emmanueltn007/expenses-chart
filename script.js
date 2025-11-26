@@ -2,7 +2,7 @@ const container = document.querySelectorAll('.container');
 const expenses = document.querySelectorAll('.expenses');
 const bars = document.querySelectorAll('.bars');
 
-fetch('data.json')
+fetch('/data.json')
     .then(response => response.json())
     .then(data => {
         const days = document.querySelectorAll('.day');
@@ -30,4 +30,4 @@ container.forEach((cont, index) => {
         expenses[index].style.opacity = 0;
         bars[index].style.opacity = 1;
     });
-});
+});s
